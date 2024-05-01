@@ -3,4 +3,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    
+    
+    <string name="chest">Peito</string>
+    <string name="right_biceps">Biceps Direito</string>
+    <string name="left_biceps">Biceps Esquerdo</string>
+    <string name="right_forearm">Antebraço Direito</string>
+    <string name="left_forearm">Antebraço Esquerdo</string>
+    <string name="waist">Cintura</string>
+    <string name="hips">Quadril</string>
+    <string name="right_thigh">Coxa Direita</string>
+    <string name="left_thigh">Coxa Esquerda</string>
+    <string name="right_calf">Panturrilha Direita</string>
+    <string name="left_calf">Panturrilha Esquerda</string>
+    <string name="weight">Peso</string>
+    <string name="save">Salvar</string>
+    <string name="clear">Limpar</string>
+    <string name="save_success">Salvo com sucesso!</string>
 </resources>

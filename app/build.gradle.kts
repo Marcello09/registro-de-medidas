@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
 }
 
 android {
@@ -32,7 +33,13 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
+
+    dataBinding {
+        enable = true
+    }
+
 }
 
 dependencies {
@@ -48,4 +55,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.material.v1110)
+
+    implementation(libs.androidx.room.runtime)
+    annotationProcessor(libs.androidx.room.compiler)
+
+    // To use Kotlin Symbol Processing (KSP)
+    kapt(libs.androidx.room.compiler)
+
+    implementation (libs.kotlinx.coroutines.core)
+
 }
